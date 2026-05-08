@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Aqua diving in Canada </title>
+    <link rel="stylesheet" href="webstyle.css">
+    <link rel="icon" href="./img/icons/aqua_diving_logo.png" type="image/x-icon">
+    <header>
+        <nav>
+            <ul class="nav-links">
+                <img class="hero-logo" src="./img/icons/logo_main.png" alt="Aqua Diving Logo">
+                <li class="nav-lst"><a href="home.html">Home</a></li>
+                <li class="nav-lst"><a href="one.html">Destinations</a></li>
+                <li class="nav-lst"><a href="two.html">Booking</a></li>
+            </ul>
+        </nav>
+    </header>
+</head>
+<body>
+    <div class="img-card" style="border-radius: 0%;">
+            <img  src="./img/Scuba-diving-ontario.jpg.webp" alt="Diving Adventure" class="media-img-collection"><img src="./img/underwater-canada-east-torpedo-jill-heinerth-0520.jpg.webp" alt="Diving Adventure" class="media-img-collection"><img src="./img/Scuba-4-tobemory.jpg" alt="Diving Adventure" class="media-img-collection"><img src="./img/underwater-canada-east-jill-heinerth-portrait-0520.jpg.webp" alt="Diving Adventure" class="media-img-collection">
+    </div>
+    <main>
+        <div class="breadcrumb">
+        <a href="home.html">Home</a> &gt; <span>Booking</span>
+    </div>
+        <h1>Book Your Diving Adventure with Us</h1>
+        <p>Ready to dive into an unforgettable underwater experience? Book your diving adventure with us today and explore the best diving spots across Canada. Whether you're a beginner or an experienced diver, we have something for everyone.</p>
+        <br>
+        <h2>Booking Process</h2>
+        <p>Our booking process is simple and straightforward. Follow these steps to secure your spot for an unforgettable diving experience:</p>
+        <ol>
+            <li><strong>Choose Your Destination:</strong> Explore our top diving destinations across Canada and select the one that suits your preferences.</li>
+            <br>
+            <li><strong>Select Your Package:</strong> Choose from our range of diving packages, including guided dives, training courses, all-inclusive packages, and custom experiences.
+            <h4>Guided Dive</h4>
+            <p>Explore top dive sites with experienced local guides who ensure safety while helping you discover the best underwater features. Perfect for both beginners and certified divers looking for a structured and enjoyable dive experience.</p>
+            <p>$120/hour per person</p>
+            <hr>
+            <h4>3-hour Training Course</h4>
+            <p>Learn essential diving skills through structured lessons led by certified instructors. Ideal for beginners or those looking to advance their certification in a supportive group environment.</p>
+            <p>Price: $60 per person  (group class of 10)</p>
+            <hr>
+            <h4>3-Day Immersive All-Inclusive Package</h4>
+            <p>Experience the ultimate diving getaway with a fully planned 3-day adventure. This package includes guided dives at top locations, accommodation, meals, equipment, and transportation, allowing you to focus entirely on exploring Canada’s stunning underwater world. Perfect for divers seeking a seamless and unforgettable experience.</p>
+            <p>$1500 including all taxes and fees: accommodations included</p>
+            <hr>
+            <h4>Custom Package</h4>
+            <p>Create your own personalized diving experience tailored to your schedule, skill level, and interests. Whether it’s a short getaway or an extended trip, we’ll design the perfect package for you.</p>
+        </li>
+        <br>
+            <li><strong>Provide Your Details:</strong> Fill out the booking form with your personal information, diving experience, and any special requirements you may have.</li>
+            <br>
+            <li><strong>Confirm Your Booking:</strong> Review your booking details and confirm your reservation. You will receive a confirmation email with all the necessary information for your diving adventure.</li>
+        </ol>
+        <br>
+        <br>
+        <section id="registration" class="registration">
+            <h2>Book Your Diving Advanture Today</h2>
+            <form action="./success-booking.html" method="post">
+                <h1 style="text-align: center;">Reserve Your Exclusive Diving Experience</h1>
+                <h3>Personal Information</h3>
+                <div class="form-column-2">
+                    
+                    <div>
+                        <label for="name"><strong style="color: red;">*</strong> Full Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email"><strong style="color: red;">*</strong> Email Address:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone"><strong style="color: red;">*</strong> Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="birthdate"><strong style="color: red;">*</strong> Birth Date:</label>
+                        <input type="date" id="birthdate" name="birthdate" required>
+                    </div>
+                </div>
+                <hr>
+                <h3>Booking Details</h3>
+                <div class="form-column-2">
+                    <div>
+                        <label for="location"><strong style="color: red;">*</strong> Preferred Dive Location:</label>
+                        <input type="text" id="location" name="location" required   placeholder="e.g., Tobermory, Vancouver Island, Newfoundland">
+                    </div>
+                    
+                    <div>
+                        <label for="date"><strong style="color: red;">*</strong> Preferred Dive Date:</label>
+                        <input type="date" id="date" name="date" required>
+                    </div>
+
+                </div>
+                <div>
+                    <label for="package"><strong style="color: red;">*</strong> Select Your Package:</label>
+                    <select id="package" name="package" required>
+                        <option value="">Select a package</option>
+                        <option value="all-inclusive">3-day Diving Trip All Inclusive</option>
+                        <option value="guided-dive">Guided Dive</option>
+                        <option value="training-course">3-hour Training Course</option>
+                        <option value="custom-package">Custom Package</option>
+                    </select>
+                </div>
+               
+                <div>
+                    <label for="experience">Diving Experience Level:</label>
+                    <select id="experience" name="experience">
+                        <option value="">Select your experience level</option>
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advanced">Advanced</option>
+                    </select>
+                </div>  
+                <div>
+                    <label for="discount">Discount Applicable:</label>
+                    <select id="discount" name="discount" >
+                        <option value="">Select discount type</option>
+                        <option value="beginner">Student Group Booking Discount</option>
+                        <option value="intermediate">Senior</option>
+                        <option value="advanced">Seasonal Discount</option>
+                    </select>
+                    
+                </div>  
+                <div>
+                        <label for="optional">Discount Code (Optional):</label>
+                        <input  type="text" id="optional" name="optional" placeholder="Enter discount code if you have one">
+                </div>
+                <label for="notes">Additional Notes:</label>
+                <textarea  style="min-height: 100px; padding: 10px;" name="notes" id="notes"></textarea>
+
+                <button  style="color: #fff;" class="btn-light full-width" type="submit">Submit Booking Request</button>
+            </form>
+        </section>
+        <br>
+        <section class="tabs">
+            <h2>Frequently Asked Questions</h2>
+            <div class="tab">
+                <label for="faq1">Q: What is included in the diving packages?</label>
+                <div class="tab-content">
+                    <p>Our diving packages include guided dives, equipment rental, and access to our experienced dive guides. Some packages may also include training courses and customized diving experiences. Please refer to the specific package details for more information.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <label for="faq2">Q: Do I need to have prior diving experience to book a dive?</label>
+                <div class="tab-content">
+                    <p>No prior diving experience is necessary to book a dive with us. We offer training courses for beginners, and our experienced dive guides will ensure that you have a safe and enjoyable diving experience regardless of your skill level.</p>
+                </div>
+            </div>
+            <div class="tab">
+                <label for="faq3">Q: What safety measures are in place during the dives?</label>
+                <div class="tab-content">
+                    <p>Safety is our top priority. Our dive guides are trained in first aid and emergency response, and we follow strict safety protocols during all dives. We also provide high-quality equipment and ensure that all divers are briefed on safety procedures before each dive.</p>
+                </div>
+            </div>
+        </section>
+        <br>
+        <h2>Contact Us for Assistance</h2>
+        <p>If you have any questions or need assistance with the booking process, please don't hesitate to contact us. Our friendly and knowledgeable team is here to help you every step of the way.</p>
+        <h3>Contact Us</h3>
+            <p>Email: aquadiving@canada.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Lake Drive, Guelph, ON, Canada</p>
+        
+    </main>
+    <div class="back">
+        <a href="#top">Back to Top</a>
+    </div>
+    <footer>
+        <div class="footer-column">
+            <div>
+            <h2>About Us</h2>
+            <p>Aqua Diving in Canada is a premier diving company dedicated to providing unforgettable underwater personalized experiences including diving services, including diving trip planning, guided dives, training courses, and customized diving packages across the country.</p>
+            </div>
+            <div>
+            <h2>Contact Us</h2>
+            <p>Email: aquadiving@canada.com</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Address: 123 Lake Drive, Guelph, ON, Canada</p>
+        </div>
+        <div class="follow-us">
+            <h2>Follow Us</h2>
+            <p><a class="footer-link" href="#" target="_blank">Facebook</a></p>
+            <p><a class="footer-link" href="#" target="_blank">Instagram</a></p>
+            <p><a class="footer-link" href="#" target="_blank">Discord</a></p>
+        </div>
+        <div class="newsletter">
+            <h2>Newsletter</h2>
+            <p>Subscribe to our newsletter for the latest diving news, tips, and exclusive offers.</p>
+            <div class="terms">
+                    <input type="checkbox" id="consent">
+                    <label for="consent"> <strong style="color: red;">*</strong> I agree to receive newsletters and promotional emails.</label>
+            </div>
+            <form >
+                <input type="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="success-message" style="display:none; color:green; margin-top:10px;">
+                <p>Thanks for subscribing!</p>
+            </div> 
+        </div>
+
+        </div>
+        
+    <p class="registry">&copy; 2026 Aqua Diving Trip Agent in Canada. All rights reserved.</p>
+    </footer>
+</body>
+</html>
